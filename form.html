@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Find - Find Your College</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Find Your College</h1>
+        <form id="collegeForm">
+            <label for="score">Score:</label>
+            <input type="number" id="score" name="score" required>
+
+            <label for="percentile">Percentile:</label>
+            <input type="number" id="percentile" name="percentile" required>
+
+            <label for="rank">Rank:</label>
+            <input type="number" id="rank" name="rank" required>
+
+            <label for="category">Category:</label>
+            <select id="category" name="category" required>
+                <option value="open">Open</option>
+                <option value="obc">OBC</option>
+                <option value="sc">SC</option>
+                <option value="st">ST</option>
+            </select>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="branch">Preferred Branch:</label>
+            <select id="branch" name="branch" required>
+                <option value="cse">Computer Science</option>
+                <option value="mechanical">Mechanical</option>
+                <option value="electrical">Electrical</option>
+                <option value="civil">Civil</option>
+                <option value="electronics">Electronics</option>
+            </select>
+
+            <button type="submit">Find Colleges</button>
+        </form>
+        <div id="results"></div>
+    </div>
+    <script src="form.js"></script>
+</body>
+</html>

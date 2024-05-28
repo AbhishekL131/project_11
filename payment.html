@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Find - Payment</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About Us</a></li>
+                <li><a href="index.html#pricing">Pricing</a></li>
+                <li><a href="index.html#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="payment-container">
+        <div class="content">
+            <h1>Payment Page</h1>
+            <p>Please select your payment method and fill in your payment details to proceed.</p>
+            <form id="paymentForm">
+                <label for="plan">Selected Plan:</label>
+                <input type="text" id="plan" name="plan" readonly>
+                
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="paymentMethod">Payment Method:</label>
+                <select id="paymentMethod" name="paymentMethod" required>
+                    <option value="card">Credit/Debit Card</option>
+                    <option value="paytm">Paytm</option>
+                    <option value="phonepe">PhonePe</option>
+                    <option value="googlepay">Google Pay</option>
+                </select>
+                
+                <div id="cardDetails" class="payment-details">
+                    <label for="cardNumber">Card Number:</label>
+                    <input type="text" id="cardNumber" name="cardNumber">
+                    
+                    <label for="expiry">Expiry Date:</label>
+                    <input type="text" id="expiry" name="expiry" placeholder="MM/YY">
+                    
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv" name="cvv">
+                </div>
+                
+                <button type="submit">Submit Payment</button>
+            </form>
+        </div>
+    </div>
+    <script src="payment.js"></script>
+</body>
+</html>
